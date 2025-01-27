@@ -1,0 +1,17 @@
+.button {
+  padding: 0.8rem 1.2rem;
+  border: 0;
+  outline: 0;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  gap: 10px;
+  transition: 200ms all;
+}
+
+.button:hover {
+  opacity: 0.9;
+}

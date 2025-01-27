@@ -1,0 +1,78 @@
+$base-color: #000;
+$heading-size: 1.4rem;
+$link-size: 1.1rem;
+
+.sidebar {
+  background: #fff;
+  border-right: 1px lightgray solid;
+}
+
+.container {
+  margin: 1rem;
+}
+
+.logo {
+  color: $base-color;
+  display: flex;
+  place-content: start;
+  padding-left: 1rem;
+  place-items: center;
+  font-size: $heading-size;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  color: $base-color;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-size: $link-size;
+  border-bottom: 1px lightgray solid;
+  padding-bottom: 10px;
+
+  a {
+    display: flex;
+    place-items: center;
+    gap: 10px;
+    padding: 10px;
+    transition: 300;
+    border-radius: 6px;
+  }
+  a:hover {
+    background: lightgray;
+  }
+}
+
+.tags {
+  margin-top: 1rem;
+  margin-left: 0.4rem;
+  color: $base-color;
+
+  h3 {
+    opacity: 0.6;
+    font-size: 1rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.8rem;
+    gap: 0.2rem;
+    margin-left: 0.1rem;
+
+    a {
+      display: flex;
+      place-items: center;
+      gap: 10px;
+      padding: 10px;
+      transition: 300;
+    }
+
+    a:hover {
+      background: lightgray;
+      border-radius: 6px;
+    }
+  }
+}

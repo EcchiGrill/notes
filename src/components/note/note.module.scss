@@ -1,0 +1,48 @@
+.main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  place-content: space-between;
+  height: 92vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.tags,
+.date {
+  display: flex;
+  gap: 6rem;
+  div {
+    display: flex;
+    place-items: center;
+    gap: 0.4rem;
+  }
+  span {
+    color: #325cfe;
+    font-weight: 500;
+  }
+}
+
+.tools {
+  padding-top: 1.4rem;
+  border-top: 1px solid lightgray;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.save {
+  color: #fff;
+  background: #325cfe;
+}

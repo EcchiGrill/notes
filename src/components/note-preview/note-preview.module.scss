@@ -1,0 +1,24 @@
+.container {
+  cursor: pointer;
+  transition: 200ms;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.container:hover {
+  background: lightgray;
+}
+
+.tags {
+  margin: 10px 0px;
+  display: flex;
+  gap: 10px;
+}
+
+.tag {
+  font-size: 0.9rem;
+  padding: 4px;
+  font-weight: 500;
+  border-radius: 5px;
+  background: lightskyblue;
+}

@@ -1,0 +1,103 @@
+.page {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 12% 1fr;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 2% 1fr;
+}
+
+.header {
+  padding: 2rem;
+  display: flex;
+  place-content: space-between;
+  place-items: center;
+  border-bottom: 1px lightgray solid;
+}
+
+.tools {
+  display: flex;
+  gap: 10px;
+  place-items: center;
+}
+
+.search {
+  position: relative;
+  margin-right: 0.8rem;
+
+  .icon {
+    position: absolute;
+    left: 0.6rem;
+    top: 0.75rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    opacity: 0.5;
+  }
+
+  input {
+    width: 15rem;
+    padding: 0.6rem;
+    padding-left: 1.8rem;
+    border-radius: 8px;
+    border: 1px gray solid;
+  }
+}
+
+.settings {
+  opacity: 0.7;
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: 200ms all;
+  cursor: pointer;
+}
+
+.settings:hover {
+  opacity: 0.5;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+
+  .notes,
+  .content,
+  .actions {
+    padding: 2rem;
+  }
+}
+
+.notes {
+  border-right: 1px lightgray solid;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  button {
+    background: #325cfe;
+    color: #fff;
+  }
+}
+
+.content {
+  border-right: 1px lightgray solid;
+}
+
+.actions {
+  border-left: 1px lightgray solid;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  button {
+    background: transparent;
+    border: 1px lightgray solid;
+    place-content: start;
+  }
+}
+
+.loading {
+  color: red;
+  padding: 3rem;
+}
