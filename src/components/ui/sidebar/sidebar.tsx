@@ -10,11 +10,13 @@ const PAGES = [
     name: "All Notes",
     path: "/",
     icon: FaHome,
+    isActive: ["", "note"],
   },
   {
     name: "Archived Notes",
     path: "/archived",
     icon: FaArchive,
+    isActive: ["archived"],
   },
 ];
 
@@ -35,7 +37,7 @@ function Sidebar() {
   return (
     <aside className={styles.sidebar}>
       <div className={styles.logo}>
-        <FaFeather />
+        <FaFeather size={35} />
         <h1>Notes</h1>
       </div>
       <div className={styles.container}>
@@ -44,7 +46,11 @@ function Sidebar() {
             <Link
               href={page.path}
               key={page.path}
-              style={{ background: path === page.path ? "lightgray" : "" }}
+              style={{
+                background: page.isActive.includes(path.slice(1).split("/")[0])
+                  ? "lightgray"
+                  : "",
+              }}
             >
               <page.icon />
               {page.name}

@@ -1,17 +1,14 @@
 import { FaMagnifyingGlass, FaPlus, FaTrash } from "react-icons/fa6";
 import styles from "./page.module.scss";
-import Sidebar from "@/components/sidebar/sidebar";
 import { FcSettings } from "react-icons/fc";
 import Button from "@/components/ui/button/button";
 import NotePreview from "@/components/note-preview/note-preview";
-import { NoteType } from "@/types";
 import { FaArchive } from "react-icons/fa";
+import Sidebar from "@/components/ui/sidebar/sidebar";
+import getNotes from "@/actions/getNotes";
 
 export default async function Home() {
-  const response = await fetch(
-    "https://6796a2c3bedc5d43a6c5c377.mockapi.io/api/notes"
-  );
-  const data: NoteType[] = await response.json();
+  const data = await getNotes();
 
   return (
     <div className={styles.page}>

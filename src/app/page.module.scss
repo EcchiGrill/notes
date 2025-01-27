@@ -94,10 +94,10 @@
     background: transparent;
     border: 1px lightgray solid;
     place-content: start;
+    transition: 200ms;
   }
-}
 
-.loading {
-  color: red;
-  padding: 3rem;
+  button:hover {
+    background: lightgray;
+  }
 }

@@ -14,7 +14,7 @@ $link-size: 1.1rem;
 .logo {
   color: $base-color;
   display: flex;
-  place-content: start;
+  place-content: flex-start;
   padding-left: 1rem;
   place-items: center;
   font-size: $heading-size;

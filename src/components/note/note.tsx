@@ -1,14 +1,11 @@
-import { NoteProps, NoteType } from "@/types";
+import { NoteProps } from "@/types";
 import styles from "./note.module.scss";
 import { FaClockRotateLeft, FaTag } from "react-icons/fa6";
 import Button from "../ui/button/button";
+import getNotes from "@/actions/getNotes";
 
 const Note: React.FC<NoteProps> = async ({ id }) => {
-  const response = await fetch(
-    `https://6796a2c3bedc5d43a6c5c377.mockapi.io/api/notes/${id}`
-  );
-
-  const data: NoteType = await response.json();
+  const data = await getNotes(id);
 
   return (
     <main className={styles.main}>

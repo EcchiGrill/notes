@@ -11,7 +11,7 @@ const NotePreview: React.FC<NotePreviewProps> = ({ id, title, date, tags }) => {
   return (
     <div
       className={styles.container}
-      onClick={() => router.push(`/${id}`)}
+      onClick={() => router.push(`/note/${id}`)}
       style={{ background: params.id === id ? "lightgray" : "" }}
     >
       <h4>{title}</h4>
